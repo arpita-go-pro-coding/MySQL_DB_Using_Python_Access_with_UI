@@ -1,0 +1,14 @@
+Field:Type:Null:Key:Default:Extra:
+film_id:b'smallint unsigned':NO:PRI:None:auto_increment:
+title:b'varchar(255)':NO:MUL:None::
+description:b'text':YES::None::
+release_year:b'year':YES::None::
+language_id:b'tinyint unsigned':NO:MUL:None::
+original_language_id:b'tinyint unsigned':YES:MUL:None::
+rental_duration:b'tinyint unsigned':NO::b'3'::
+rental_rate:b'decimal(4,2)':NO::b'4.99'::
+length:b'smallint unsigned':YES::None::
+replacement_cost:b'decimal(5,2)':NO::b'19.99'::
+rating:b"enum('G','PG','PG-13','R','NC-17')":YES::b'G'::
+special_features:b"set('Trailers','Commentaries','Deleted Scenes','Behind the Scenes')":YES::None::
+last_update:b'timestamp':NO::b'CURRENT_TIMESTAMP':DEFAULT_GENERATED on update CURRENT_TIMESTAMP:
